@@ -100,10 +100,10 @@ export default {
 };
 </script>
 
-<style scoped >
-  .wrap__container{
-    border:1px solid #ffffff;
-  }
+<style scoped>
+.wrap__container {
+  border: 1px solid #ffffff;
+}
 </style>
 <style scoped lang="scss">
 .navigation {
@@ -210,7 +210,7 @@ export default {
     margin-top: auto;
     padding-bottom: 2rem;
     .btn {
-      width:80%;
+      width: 80%;
       vertical-align: middle;
       padding: 16px;
       font-size: 20px;

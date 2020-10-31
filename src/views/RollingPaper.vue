@@ -38,7 +38,11 @@
           <button type="button" class="btn notice-badge">
             작성 <span class="badge badge-light">{{ listCount }} 명</span>
           </button>
-          <button type="button" class="btn btn-link share-button" @click="handleShowAlert('링크가 복사되었습니다.')" >
+          <button
+            type="button"
+            class="btn btn-link share-button"
+            @click="handleShowAlert('링크가 복사되었습니다.')"
+          >
             링크로 초대하기 <i class="far fa-share-square "></i>
           </button>
         </div>
@@ -90,9 +94,8 @@
           v-model="newAuthor.comment"
         ></textarea>
         <div class="chat__icon-right chat__icon"></div>
-        </div>
+      </div>
       <!-- 메시지 쓰는부분 -->
-
     </div>
     <div v-else>
       <!-- 롤링페이퍼 새로 만들기 -->
@@ -209,7 +212,6 @@ export default {
   position: -webkit-sticky;
   top: 0px;
   z-index: 1;
-
 }
 
 .nav-div {
@@ -407,7 +409,6 @@ button {
     line-height: 150%;
     font-weight: 600;
   }
-
 }
 .alert-popup__wrap {
   position: absolute;
@@ -418,29 +419,29 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
-  .alert-popup {
-    background: rgba($color: #fff, $alpha: 0.7);
-    height: 3rem;
-    width: 80%;
-    padding: 0 2rem;
-    font-family: "nanum square";
-    font-size: 15pt;
-    border-radius: 1.5rem;
-    border:1px solid #333333;
-    white-space: nowrap;
-    overflow: hidden;
+}
+.alert-popup {
+  background: rgba($color: #fff, $alpha: 0.7);
+  height: 3rem;
+  width: 80%;
+  padding: 0 2rem;
+  font-family: "nanum square";
+  font-size: 15pt;
+  border-radius: 1.5rem;
+  border: 1px solid #333333;
+  white-space: nowrap;
+  overflow: hidden;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .popup-enter-active,
-  .popup-leave-active {
-    transition: all 0.5s;
-  }
-  .popup-enter, .popup-leave-to /* .fade-leave-active below version 2.1.8 */ {
-    width: 0;
-    opacity: 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-enter-active,
+.popup-leave-active {
+  transition: all 0.5s;
+}
+.popup-enter, .popup-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  width: 0;
+  opacity: 0;
+}
 </style>
